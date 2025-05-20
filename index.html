@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>header responsivo com @media</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- baixando um icone de um site -->
+
+    <!-- primeiro passo: incorporar a biblioteca -->
+
+    <!-- digite no google font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+
+<body>
+
+     <header> 
+
+        <nav id="navBar">
+
+         <!-- inserir o logo aqui -->
+
+         <i class="fa-solid fa-fan">FLOWER</i>
+
+         <!-- menu com marcador -->
+
+         <ul id="nav_list">
+
+           <li class="list"><a href="#inicio">inicio</a></li>
+
+           <li class="list"><a href="#sobre">sobre</a></li>
+
+           <li class="list"><a href="#servicos">serviços</a></li>
+
+           <li class="list"><a href="#contato">contato</a></li>
+
+         </ul>
+
+           <!-- inserir o botão peça aqui -->
+            
+            <button class="btn">peça aqui</button> 
+
+           <!-- criar o botão que só irá aparecer quando a tela estiver menor -->
+
+           <button id="mobileBtn">
+
+            <i class="fa-regular fa-fan"></i>
+
+           </button>
+
+        </nav>
+
+        <!-- menu responsivel -->
+
+        <div id="mobileMenu">
+
+            <ul id="mobileNavList">
+
+                <li class="list"><a href="#">inicio</a></li>
+
+                <li class="list"><a href="#">sobre</a></li>
+     
+                <li class="list"><a href="#">serviços</a></li>
+     
+                <li class="list"><a href="#">contato</a></li>
+     
+            </ul>
+
+             <!-- inserir o botão peça aqui -->
+            
+             <button class="btn">peça aqui</button>
+
+        </div>
+
+     </header>
+
+    
+</body>
+
+</html>
