@@ -66,9 +66,41 @@ padding: 28px 8%;
 
 /*escondendo os elementos do mobile*/
 #mobileBtn{
-    /*display: none;*/
+    display: none;
     color: rgb(0, 0, 29)
+    
 
+}
+#mobileMenu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
 
+/*escondendo/transformando os elementos padroes*/
+@media screen and (max-width:800px){
+    #nav_list, #navBar .btn{
+        display: none;
+    }
+    
 
+    /*exibir o menu mobile*/
+    #mobileBtn{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.6rem;
+        cursor: pointer;
+    } 
+    /*as proximas configurações só irá funcionar com javascript*/
+    #mobileMenu.active{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+
+    }
+    #mobileNavList .list{
+        list-style: none;
+        text-align: center;
+    }
 }
